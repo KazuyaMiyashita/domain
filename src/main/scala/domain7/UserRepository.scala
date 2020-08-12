@@ -1,9 +1,6 @@
-// package domain6
+package domain7
 
-// trait UserRepository {
-
-//   type U <: User
-//   def fetch(id: Long): U
-//   def store(user: U): Unit
-
-// }
+trait UserRepository[U <: User] {
+  def fetch(id: Long): U
+  def store(user: U): Unit
+}
