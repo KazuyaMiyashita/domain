@@ -1,6 +1,6 @@
 package domain7
 
-trait UserRepository[U <: User] {
-  def fetch(id: Long): U
-  def store(user: U): Unit
+trait UserRepository[PI <: ProfileImage] {
+  def fetch(id: Long): User[PI]
+  def store(user: User[PI]): Unit
 }

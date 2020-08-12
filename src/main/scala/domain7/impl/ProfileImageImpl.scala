@@ -1,7 +1,7 @@
 package domain7.impl
 
 import java.net.URL
-import domain6.ProfileImage
+import domain7.ProfileImage
 
 case class ProfileImageImpl(path: String, extension: String) extends ProfileImage {
 
